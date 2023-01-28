@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    tools:context=".activity.ReleaseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/releaseLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_basket_items_description"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_weight="0.02"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/basket_items"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/basket_items"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.45"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:longClickable="true"
+                android:scrollbars="horizontal"></ListView>
+
+            <TextView
+                android:id="@+id/tv_person_data_description"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_weight="0.02"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/person_data"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/person_data"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.45"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                android:longClickable="true"
+                android:scrollbars="horizontal"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/checkButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:text="@string/btn_check_release"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnRelease"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:text="@string/btn_release"
+                android:visibility="visible" />
+
+            <com.dhruv.timerbutton.TimerButton
+                android:id="@+id/timer_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:visibility="gone"
+                app:animationBackground="@color/colorPrimary"
+                app:animationCompleteText="@string/btn_release_done"
+                app:buttonBackground="@drawable/selector_button"
+                app:defaultText="@string/btn_release"
+                app:dynamicString="@string/btn_release"
+                app:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

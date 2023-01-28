@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Rock Blues &amp; Motocycle - BILETY</string>
+    <string name="title_home">Skanuj</string>
+    <string name="title_dashboard">Wprowadź</string>
+    <string name="title_notifications">Raport</string>
+    <string name="title_settings">Ustawienia</string>
+    <string name="title_activity_enter_main">Skanuj QR Code</string>
+    <string name="title_activity_enter">Wprowadź kod</string>
+    <string name="title_activity_report">Raport</string>
+    <!-- Strings related to login -->
+    <string name="prompt_login">Użytkownik</string>
+    <string name="enter_code">Podaj kod biletu</string>
+    <string name="title_activity_release">Wydaj produkty</string>
+    <string name="title_activity_main">Skanuj bilet</string>
+    <!--przyciski-->
+    <string name="btn_release">Wydaj</string>
+    <string name="btn_save">Zapisz</string>
+    <string name="btn_check_release">Sprawdź dane z biletem</string>
+    <string name="btn_release_done">PRZEDMIOTY WYDANO</string>
+    <!--labelki-->
+    <string name="person_data">Dane osoby</string>
+    <string name="basket_items">Do wydania</string>
+    <string name="report_waiting">Do wydania</string>
+    <string name="report_released">Wydano przedmiotów</string>
+    <string name="release_data">Dane biletu</string>
+    <string name="release_comments">Notatki</string>
+    <string name="title_activity_login">Zaloguj się</string>
+    <string name="prompt_password">Hasło</string>
+    <string name="error_invalid_email">Nieprawidłowy adres e-mail</string>
+    <string name="error_invalid_password">Hasło jest za krótkie</string>
+    <string name="error_incorrect_password">Hasło jest nieprawidłowe</string>
+    <string name="error_field_required">To pole jest wymagane</string>
+    <string name="title_activity_forbidden">Brak dostępu</string>
+    <string name="title_activity_settings">Ustawienia</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
